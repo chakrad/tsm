@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Us</title>
+	<style>
+		body {
+		background: #eee;
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		
+		background-image: url('tsmlogo.png');
+		background-attachment: fixed; 
+		}
+
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		li {
+		  display: inline-block;
+		  margin-right: 20px;
+		}
+
+		div.fixed {
+		  position: fixed;
+		  bottom: 0;
+		  left: 0;
+		  width: 100%;
+		  border: 3px solid #002BFF;
+		}
+		
+		input[type=text], select, textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		resize: vertical;
+		}
+
+		label {
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+		}
+
+		input[type=submit] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		float: right;
+		}
+
+		input[type=submit]:hover {
+		background-color: #45a049;
+		}
+
+		.container {
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+		}
+
+		.col-25 {
+		float: left;
+		width: 25%;
+		margin-top: 6px;
+		}
+
+		.col-75 {
+		float: left;
+		width: 75%;
+		margin-top: 6px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+
+		/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.col-25, .col-75, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+			}
+		}
+		
+		
+		#foot-contain
+		{
+			position: relative;
+			min-height: 10vh;
+		}
+
+		#content-wrap{
+			padding-bottom: 2.5rem;
+		}
+
+		#footer {
+		  position: absolute;
+		  bottom: 0;
+		  width: 100%;
+		  border: 3px solid #002BFF;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "contact.html">Contact</a></li>
+				<li><a href = "services.html">Services</a></li>
+			</ul>
+		</nav>
+	</header>
+	<a href = "index.html">
+	<img src="Team_SoloMid_logo.png"
+			alt="Team Solomid logo from creative commons by Endzork" height="100">
+	</a>
+	
+	<h1>Contact Us Here</h1>
+	<h2>If you've found a hotspot of salt or want to learn more, please reach out!</h2>
+	
+	
+	<a href="mailto:contact@tsm.cool"  target="_blank">Click here to email us at contact@tsm.cool</a>
+	<br><p style = "gray">
+	Or call us at (725)-(864)-(6377) or SALTMINERS for potential immediate response.</p>
+	
+	<br>If you choose, reach out to us below:<br><br>
+	
+	<div class="container">
+		<form action="" method = "get">
+			<div class="row">
+			<div class="col-25">
+			<label for="name">Name</label>
+		</div>
+		<div class="col-75">
+			<input type="text" id="name" name="name" placeholder="Your name..">
+		</div>
+		</div>
+		
+		<div class="row">
+		<div class="col-25">
+		  <label for="email">Email or Phone Number</label>
+		</div>
+		<div class="col-75">
+		  <input type="text" id="email" name="email" placeholder="Your contact info..">
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="col-25">
+			<label for="subject">Subject</label>
+		</div>
+		<div class="col-75">
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+		</div>
+		</div>
+		<div class="row">
+			<input type="submit" value="Submit">
+		</div>
+		</form>
+	</div>
+	
+	<br>Thank you for reaching out. We'll try to get back to you as soon as possible.
+	
+	<div id = "foot-contain">
+		<div id = :"content-wrap">
+		<footer id = "footer"><b>Website by The Salt Miners(TSM) &copy; </b>
+		<br>Background image courtesy of tsm.gg
+		<br>Home image is from Creative Commons and credit
+		is: "File:Team SoloMid logo.png" by Endzork is licensed under CC BY-SA 4.0</footer>
+		</div>
+	</div>
+</body>
+</html>
